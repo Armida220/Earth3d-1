@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\ScriptingCoreTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginAuto\null\NullLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\TestJSAPIAuto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\TypeIDMap_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\fake_jsarray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\fake_jsmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\jsapi_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\jsapiauto_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\jsarray_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\jscallback_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\meta_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\variant_list_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\variant_map_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\variant_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{43D85277-F6DE-3049-887B-D034FD415188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4447B5BE-05E7-3745-9B75-A53998BB8E15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

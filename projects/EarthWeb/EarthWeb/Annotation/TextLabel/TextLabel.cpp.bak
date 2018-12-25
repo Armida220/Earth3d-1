@@ -1,0 +1,53 @@
+﻿#include <EarthWeb/Annotation/TextLabel/TextLable.h>
+#include <atlstr.h>
+
+bool TextLabel::get_visible()
+{
+	return getOrCreateInnerObject()->isVisible();
+}
+
+void TextLabel::put_visible( bool bVisible )
+{
+	getOrCreateInnerObject()->setVisible( bVisible );
+}
+
+bool TextLabel::get_enabled()
+{
+	return getOrCreateInnerObject()->isEnabled();
+}
+
+void TextLabel::setPosition( GeoPointPtr ptrGeoPoint )
+{
+	if ( ptrGeoPoint.get() == NULL )
+	{
+		return;
+	}
+
+	getOrCreateInnerObject()->setPosition( * ptrGeoPoint->getOrCreateInnerObject() );
+}
+
+GeoPointPtr TextLabel::getPosition()
+{
+	GeoPointPtr ptrGeoPoint = boost::make_shared<GeoPoint>();
+	*( ptrGeoPoint->getOrCreateInnerObject() ) = getOrCreateInnerObject()->getPosition();
+	return ptrGeoPoint;
+}
+
+void TextLabel::setText( const std::wstring& wstrText )
+{
+	getOrCreateInnerObject()->setLocalText(CStringA(wstrText.data()).GetString());
+}
+
+void TextLabel::setTextExt(const std::wstring& str, unsigned sz, const std::wstring& col, const std::wstring& fnt)
+{
+	//std::wstring strw = L"北京";
+	char *stopstring;
+	unsigned int c = strtoul(CStringA(col.data()).GetString(), &stopstring, 16);
+	getOrCreateInnerObject()->setLocalTextExt(CStringA(str.data()).GetString(), sz, c, CStringA(fnt.data()).GetString());
+	//getOrCreateInnerObject()->setLocalTextExt(str, sz, c, CStringA(fnt.data()).GetString());
+}
+
+std::wstring TextLabel::getText()
+{
+	return ( std::wstring ) CString( getOrCreateInnerObject()->getText().data() );
+}

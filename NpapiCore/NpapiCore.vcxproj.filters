@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\NpapiCore\NPJavascriptObject.cpp">
+      <Filter>NpapiScripting</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\NpapiCore\NPObjectAPI.cpp">
+      <Filter>NpapiScripting</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\NpapiCore\NpapiBrowserHost.cpp">
+      <Filter>NpapiScripting</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\NpapiCore\NpapiPlugin.cpp">
+      <Filter>NpapiPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\NpapiCore\NpapiPluginModule.cpp">
+      <Filter>NpapiPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\NpapiCore\NpapiPluginModule_NPP.cpp">
+      <Filter>NpapiPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\NpapiCore\NpapiStream.cpp">
+      <Filter>NpapiPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\NpapiCore\NpapiTypes.cpp">
+      <Filter>NpapiPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\NpapiCore\Win\NpapiBrowserHostAsyncWin.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\NpapiCore\precompiled_headers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\NpapiCore\NPJavascriptObject.h">
+      <Filter>NpapiScripting</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\NpapiCore\NPObjectAPI.h">
+      <Filter>NpapiScripting</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\NpapiCore\NpapiBrowserHost.h">
+      <Filter>NpapiScripting</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\NpapiCore\NPVariantUtil.h">
+      <Filter>NpapiScripting</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\NpapiCore\NpapiPlugin.h">
+      <Filter>NpapiPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\NpapiCore\NpapiPluginFactory.h">
+      <Filter>NpapiPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\NpapiCore\NpapiPluginModule.h">
+      <Filter>NpapiPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\NpapiCore\NpapiStream.h">
+      <Filter>NpapiPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\NpapiCore\NpapiTypes.h">
+      <Filter>NpapiPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\NpapiCore\NpapiFactoryDefinitions.h">
+      <Filter>NpapiPlugin</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\NpapiCore\Win\NpapiBrowserHostAsyncWin.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\NpapiCore\precompiled_headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\prjs\FireBreath-master\src\NpapiCore\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{43D85277-F6DE-3049-887B-D034FD415188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NpapiPlugin">
+      <UniqueIdentifier>{2C082CD6-9EEF-31A4-BF6D-54147FED2513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NpapiScripting">
+      <UniqueIdentifier>{8EAE6A66-799D-3669-9B4F-4E6F608C5B22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4447B5BE-05E7-3745-9B75-A53998BB8E15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{AFDE4A0D-ADDE-3207-B703-57F624C9BFF0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

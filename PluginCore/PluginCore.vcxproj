@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{862CAF85-6756-30A5-9B81-74726AD24861}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>PluginCore</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\prjs\FireBreath-master\buildex\PluginCore\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PluginCore.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PluginCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\prjs\FireBreath-master\buildex\PluginCore\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PluginCore.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PluginCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\prjs\FireBreath-master\buildex\PluginCore\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">PluginCore.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">PluginCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\prjs\FireBreath-master\buildex\PluginCore\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">PluginCore.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">PluginCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\src\PluginCore;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\NpapiCore;E:\prjs\FireBreath-master\src\ActiveXCore;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;E:\prjs\FireBreath-master\src\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm256</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;DEBUG;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\src\PluginCore;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\NpapiCore;E:\prjs\FireBreath-master\src\ActiveXCore;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;E:\prjs\FireBreath-master\src\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\src\PluginCore;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\NpapiCore;E:\prjs\FireBreath-master\src\ActiveXCore;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;E:\prjs\FireBreath-master\src\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\src\PluginCore;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\NpapiCore;E:\prjs\FireBreath-master\src\ActiveXCore;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;E:\prjs\FireBreath-master\src\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm256</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\src\PluginCore;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\NpapiCore;E:\prjs\FireBreath-master\src\ActiveXCore;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;E:\prjs\FireBreath-master\src\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\src\PluginCore;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\NpapiCore;E:\prjs\FireBreath-master\src\ActiveXCore;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;E:\prjs\FireBreath-master\src\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\src\PluginCore;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\NpapiCore;E:\prjs\FireBreath-master\src\ActiveXCore;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;E:\prjs\FireBreath-master\src\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm256</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\src\PluginCore;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\NpapiCore;E:\prjs\FireBreath-master\src\ActiveXCore;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;E:\prjs\FireBreath-master\src\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\src\PluginCore;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\NpapiCore;E:\prjs\FireBreath-master\src\ActiveXCore;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;E:\prjs\FireBreath-master\src\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\src\PluginCore;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\NpapiCore;E:\prjs\FireBreath-master\src\ActiveXCore;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;E:\prjs\FireBreath-master\src\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm256</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\src\PluginCore;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\NpapiCore;E:\prjs\FireBreath-master\src\ActiveXCore;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;E:\prjs\FireBreath-master\src\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\src\PluginCore;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\NpapiCore;E:\prjs\FireBreath-master\src\ActiveXCore;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;E:\prjs\FireBreath-master\src\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\prjs\FireBreath-master\src\PluginCore\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/prjs/FireBreath-master/src/PluginCore/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/prjs/FireBreath-master -BE:/prjs/FireBreath-master/buildex --check-stamp-file E:/prjs/FireBreath-master/buildex/PluginCore/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/prjs/FireBreath-master/src/PluginCore/CMakeLists.txt;E:\prjs\FireBreath-master\src\PluginCore\CMakeLists.txt;E:\prjs\FireBreath-master\src\PluginCore\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\prjs\FireBreath-master\buildex\PluginCore\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/prjs/FireBreath-master/src/PluginCore/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/prjs/FireBreath-master -BE:/prjs/FireBreath-master/buildex --check-stamp-file E:/prjs/FireBreath-master/buildex/PluginCore/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/prjs/FireBreath-master/src/PluginCore/CMakeLists.txt;E:\prjs\FireBreath-master\src\PluginCore\CMakeLists.txt;E:\prjs\FireBreath-master\src\PluginCore\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\prjs\FireBreath-master\buildex\PluginCore\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/prjs/FireBreath-master/src/PluginCore/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/prjs/FireBreath-master -BE:/prjs/FireBreath-master/buildex --check-stamp-file E:/prjs/FireBreath-master/buildex/PluginCore/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/prjs/FireBreath-master/src/PluginCore/CMakeLists.txt;E:\prjs\FireBreath-master\src\PluginCore\CMakeLists.txt;E:\prjs\FireBreath-master\src\PluginCore\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\prjs\FireBreath-master\buildex\PluginCore\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/prjs/FireBreath-master/src/PluginCore/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/prjs/FireBreath-master -BE:/prjs/FireBreath-master/buildex --check-stamp-file E:/prjs/FireBreath-master/buildex/PluginCore/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/prjs/FireBreath-master/src/PluginCore/CMakeLists.txt;E:\prjs\FireBreath-master\src\PluginCore\CMakeLists.txt;E:\prjs\FireBreath-master\src\PluginCore\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\prjs\FireBreath-master\buildex\PluginCore\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginCore\BrowserPlugin.cpp" />
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginCore\BrowserStream.cpp" />
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginCore\BrowserStreamManager.cpp" />
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginCore\DefaultBrowserStreamHandler.cpp" />
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginCore\FactoryBase.cpp" />
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginCore\PluginCore.cpp" />
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEventSource.cpp" />
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginCore\SimpleStreamHelper.cpp" />
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginCore\Timer.cpp" />
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginCore\TimerService.cpp" />
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginCore\precompiled_headers.cpp" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\AsyncDrawService.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\BrowserPlugin.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\BrowserStream.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\BrowserStreamManager.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\BrowserStreamRequest.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\ConstructDefaultPluginWindows.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\DefaultBrowserStreamHandler.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\FactoryBase.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginCore.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEvent.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEventSink.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEventSource.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginInfo.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginWindow.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginWindowForwardDecl.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\SimpleStreamHelper.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\SystemHelpers.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\SystemProxyDetector.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\Timer.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\TimerService.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\precompiled_headers.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEvents\AttachedEvent.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEvents\DrawingEvents.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEvents\GeneralEvents.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEvents\KeyCodes.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEvents\KeyboardEvents.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEvents\MacEventCarbon.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEvents\MacEventCocoa.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEvents\MouseEvents.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEvents\StreamEvents.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEvents\WindowsEvent.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEvents\X11Event.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\PluginEvents\X11NativeGdkEvent.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\Win\KeyCodesWin.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\Win\SystemProxyDetectorWin.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\Win\WinMessageWindow.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\Win\WindowContextWin.h" />
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginCore\Win\KeyCodesWin.cpp" />
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginCore\Win\SystemHelpersWin.cpp" />
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginCore\Win\SystemProxyDetectorWin.cpp" />
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginCore\Win\WinMessageWindow.cpp" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\Mac\OneShotManager.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\Mac\SystemProxyDetectorMac.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\Mac\SystemProxyDetectorMac.cpp" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\Mac\OneShotManager.mm" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\Mac\SystemHelpersMac.mm" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\X11\SystemProxyDetectorX11.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\X11\SystemHelpersX11.cpp" />
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginCore\X11\SystemProxyDetectorX11.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\prjs\FireBreath-master\buildex\ZERO_CHECK.vcxproj">
+      <Project>{5806EA1E-4E4B-3AD6-8E40-D9D6EB5EBC0E}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ActiveXCore\ActiveXBrowserHost.cpp">
+      <Filter>ActiveXScripting</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ActiveXCore\IDispatchAPI.cpp">
+      <Filter>ActiveXScripting</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ActiveXCore\JSAPI_IDispatchEx.cpp">
+      <Filter>ActiveXScripting</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ActiveXCore\FBControl.cpp">
+      <Filter>ActiveXControl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ActiveXCore\axstream.cpp">
+      <Filter>ActiveXControl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ActiveXCore\axstream_impl.cpp">
+      <Filter>ActiveXControl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ActiveXCore\axutil.cpp">
+      <Filter>ActiveXControl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ActiveXCore\AXDOM\Document.cpp">
+      <Filter>AXDOM</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ActiveXCore\AXDOM\Element.cpp">
+      <Filter>AXDOM</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ActiveXCore\AXDOM\Node.cpp">
+      <Filter>AXDOM</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ActiveXCore\AXDOM\Window.cpp">
+      <Filter>AXDOM</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ActiveXCore\precompiled_headers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\ActiveXBrowserHost.h">
+      <Filter>ActiveXScripting</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\ComVariantUtil.h">
+      <Filter>ActiveXScripting</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\COMJavascriptObject.h">
+      <Filter>ActiveXScripting</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\IDispatchAPI.h">
+      <Filter>ActiveXScripting</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\JSAPI_IDispatchEx.h">
+      <Filter>ActiveXScripting</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\ActiveXFactoryDefinitions.h">
+      <Filter>ActiveXControl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\FBControl.h">
+      <Filter>ActiveXControl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\axstream.h">
+      <Filter>ActiveXControl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\axstream_impl.h">
+      <Filter>ActiveXControl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\axutil.h">
+      <Filter>ActiveXControl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\registrymap.hpp">
+      <Filter>ActiveXControl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\AXDOM\Document.h">
+      <Filter>AXDOM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\AXDOM\Element.h">
+      <Filter>AXDOM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\AXDOM\Node.h">
+      <Filter>AXDOM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\AXDOM\Window.h">
+      <Filter>AXDOM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ActiveXCore\precompiled_headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\prjs\FireBreath-master\src\ActiveXCore\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AXDOM">
+      <UniqueIdentifier>{5F4D1C88-1EBE-36BC-A27B-9D8C75480806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ActiveXControl">
+      <UniqueIdentifier>{3E208886-A523-3B18-B364-3775FEB65B45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ActiveXScripting">
+      <UniqueIdentifier>{A0204B2D-C1B8-3AD4-9FFA-6F7A28286645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{43D85277-F6DE-3049-887B-D034FD415188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4447B5BE-05E7-3745-9B75-A53998BB8E15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

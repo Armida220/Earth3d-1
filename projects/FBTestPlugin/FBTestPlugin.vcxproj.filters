@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\FBTestMathPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\FBTestPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\FBTestPluginAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\Factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\SimpleMathAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\SimpleStreams.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\ThreadRunnerAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\FBTestMathPlugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\FBTestPlugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\FBTestPluginAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\SimpleMathAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\SimpleStreams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\ThreadRunnerAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\buildex\projects\FBTestPlugin\gen\rcgen.sh.in">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\buildex\projects\FBTestPlugin\gen\global\COM_config.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\buildex\projects\FBTestPlugin\gen\global\axplugin_defs.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\buildex\projects\FBTestPlugin\gen\global\config.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\buildex\projects\FBTestPlugin\gen\global\resource.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\PluginConfig.cmake" />
+    <None Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\place_holder.html" />
+    <None Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\switcher.html" />
+    <None Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\test.html" />
+    <None Include="E:\prjs\FireBreath-master\buildex\projects\FBTestPlugin\gen\ExportList_plugin.txt">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\buildex\projects\FBTestPlugin\gen\FBControl.htm">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\buildex\projects\FBTestPlugin\gen\FBControl.rgs">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\buildex\projects\FBTestPlugin\gen\FireBreathWin.def">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\buildex\projects\FBTestPlugin\gen\FireBreathWin.rgs">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\buildex\projects\FBTestPlugin\gen\README.txt">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\buildex\projects\FBTestPlugin\gen\global">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\buildex\projects\FBTestPlugin\gen\version_script.txt">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\buildex\projects\FBTestPlugin\gen\global\axplugin_defs.inc">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\examples\FBTestPlugin\Win\projectDef.cmake">
+      <Filter>Win</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\prjs\FireBreath-master\buildex\projects\FBTestPlugin\gen\firebreathWin.rc">
+      <Filter>Generated</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{1AC384E5-0198-3EB4-B354-A91F3AE5090D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{43D85277-F6DE-3049-887B-D034FD415188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4447B5BE-05E7-3745-9B75-A53998BB8E15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win">
+      <UniqueIdentifier>{0334DA25-C687-3832-A9C5-BFC920F0242F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

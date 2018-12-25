@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\variant.cpp">
+      <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\utf8_tools.cpp">
+      <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\URI.cpp">
+      <Filter>Types</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\DOM\Document.cpp">
+      <Filter>DOM</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\DOM\Element.cpp">
+      <Filter>DOM</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\DOM\Node.cpp">
+      <Filter>DOM</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\DOM\Window.cpp">
+      <Filter>DOM</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\Util\JSFakeArray.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSAPIAuto.cpp">
+      <Filter>JSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSAPIImpl.cpp">
+      <Filter>JSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSAPIProxy.cpp">
+      <Filter>JSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSAPISimple.cpp">
+      <Filter>JSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\BrowserHost.cpp">
+      <Filter>JSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\CrossThreadCall.cpp">
+      <Filter>JSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSFunction.cpp">
+      <Filter>JSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSEvent.cpp">
+      <Filter>JSAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\ScriptingCore\precompiled_headers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\APITypes.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\variant.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\variant_conversions.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\variant_list.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\variant_map.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\TypeIDMap.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\utf8_tools.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\URI.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\SafeQueue.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSExceptions.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\FBPointers.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\ShareableReference.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\logging.h">
+      <Filter>Types</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\DOM.h">
+      <Filter>DOM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\DOM\Document.h">
+      <Filter>DOM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\DOM\Element.h">
+      <Filter>DOM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\DOM\Node.h">
+      <Filter>DOM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\DOM\Window.h">
+      <Filter>DOM</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\Util\JSFakeArray.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\Util\meta_util.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\Util\meta_util_impl.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\Util\typesafe_event.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSAPI.h">
+      <Filter>JSAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSAPIAuto.h">
+      <Filter>JSAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSAPIImpl.h">
+      <Filter>JSAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSAPIProxy.h">
+      <Filter>JSAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSAPISimple.h">
+      <Filter>JSAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\BrowserHost.h">
+      <Filter>JSAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSObject.h">
+      <Filter>JSAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\CrossThreadCall.h">
+      <Filter>JSAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\AsyncFunctionCall.h">
+      <Filter>JSAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\MethodConverter.h">
+      <Filter>JSAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\PropertyConverter.h">
+      <Filter>JSAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSCallback.h">
+      <Filter>JSAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSFunction.h">
+      <Filter>JSAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\JSEvent.h">
+      <Filter>JSAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\ConverterUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\TestJSAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\ScriptingCore\precompiled_headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\prjs\FireBreath-master\src\ScriptingCore\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\prjs\FireBreath-master\src\ScriptingCore\dispatch_gen.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="DOM">
+      <UniqueIdentifier>{803A1872-418A-3DDC-906B-B3501228021C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{43D85277-F6DE-3049-887B-D034FD415188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JSAPI">
+      <UniqueIdentifier>{B511C4F7-4A73-3A04-A73E-55EF84E6CBBB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4447B5BE-05E7-3745-9B75-A53998BB8E15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Types">
+      <UniqueIdentifier>{37952F55-2D5C-3BB9-B9BD-D89E4D36D431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{29FB76B7-7F6F-3A11-9FB1-C6DCE731AD50}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

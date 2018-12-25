@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B2331BCD-E942-3D76-99C7-B9655A6ECAE2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>UnitTest_ScriptingCore</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\prjs\FireBreath-master\buildex\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UnitTest_ScriptingCore.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UnitTest_ScriptingCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\prjs\FireBreath-master\buildex\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UnitTest_ScriptingCore.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UnitTest_ScriptingCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\prjs\FireBreath-master\buildex\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">UnitTest_ScriptingCore.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">UnitTest_ScriptingCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\prjs\FireBreath-master\buildex\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">UnitTest_ScriptingCore.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">UnitTest_ScriptingCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\tests\ScriptingCoreTest;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\config;E:\prjs\FireBreath-master\tests\unittest-cpp\UnitTest++\src;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm256</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;DEBUG;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\tests\ScriptingCoreTest;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\config;E:\prjs\FireBreath-master\tests\unittest-cpp\UnitTest++\src;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\tests\ScriptingCoreTest;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\config;E:\prjs\FireBreath-master\tests\unittest-cpp\UnitTest++\src;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+..\bin\$(Configuration)\UnitTest_ScriptingCore
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\ScriptingCore\Debug\ScriptingCore.lib;..\PluginCore\Debug\PluginCore.lib;..\unittest-cpp\UnitTest++\Debug\UnitTest++.lib;..\boost\libs\system\Debug\boost_system.lib;..\boost\libs\date_time\Debug\boost_date_time.lib;..\boost\libs\regex\Debug\boost_regex.lib;Wininet.lib;..\boost\libs\thread\Debug\boost_thread.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:/Program Files (x86)/Microsoft Visual Studio 12.0/VC/atlmfc/lib/amd64</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/prjs/FireBreath-master/buildex/ScriptingCoreTest/Debug/UnitTest_ScriptingCore.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/prjs/FireBreath-master/buildex/bin/Debug/UnitTest_ScriptingCore.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\tests\ScriptingCoreTest;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\config;E:\prjs\FireBreath-master\tests\unittest-cpp\UnitTest++\src;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm256</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\tests\ScriptingCoreTest;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\config;E:\prjs\FireBreath-master\tests\unittest-cpp\UnitTest++\src;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\tests\ScriptingCoreTest;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\config;E:\prjs\FireBreath-master\tests\unittest-cpp\UnitTest++\src;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+..\bin\$(Configuration)\UnitTest_ScriptingCore
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\ScriptingCore\Release\ScriptingCore.lib;..\PluginCore\Release\PluginCore.lib;..\unittest-cpp\UnitTest++\Release\UnitTest++.lib;..\boost\libs\system\Release\boost_system.lib;..\boost\libs\date_time\Release\boost_date_time.lib;..\boost\libs\regex\Release\boost_regex.lib;Wininet.lib;..\boost\libs\thread\Release\boost_thread.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:/Program Files (x86)/Microsoft Visual Studio 12.0/VC/atlmfc/lib/amd64</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/prjs/FireBreath-master/buildex/ScriptingCoreTest/Release/UnitTest_ScriptingCore.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>E:/prjs/FireBreath-master/buildex/bin/Release/UnitTest_ScriptingCore.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\tests\ScriptingCoreTest;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\config;E:\prjs\FireBreath-master\tests\unittest-cpp\UnitTest++\src;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm256</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\tests\ScriptingCoreTest;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\config;E:\prjs\FireBreath-master\tests\unittest-cpp\UnitTest++\src;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\tests\ScriptingCoreTest;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\config;E:\prjs\FireBreath-master\tests\unittest-cpp\UnitTest++\src;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+..\bin\$(Configuration)\UnitTest_ScriptingCore
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\ScriptingCore\MinSizeRel\ScriptingCore.lib;..\PluginCore\MinSizeRel\PluginCore.lib;..\unittest-cpp\UnitTest++\MinSizeRel\UnitTest++.lib;..\boost\libs\system\MinSizeRel\boost_system.lib;..\boost\libs\date_time\MinSizeRel\boost_date_time.lib;..\boost\libs\regex\MinSizeRel\boost_regex.lib;Wininet.lib;..\boost\libs\thread\MinSizeRel\boost_thread.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:/Program Files (x86)/Microsoft Visual Studio 12.0/VC/atlmfc/lib/amd64</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/prjs/FireBreath-master/buildex/ScriptingCoreTest/MinSizeRel/UnitTest_ScriptingCore.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>E:/prjs/FireBreath-master/buildex/bin/MinSizeRel/UnitTest_ScriptingCore.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\tests\ScriptingCoreTest;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\config;E:\prjs\FireBreath-master\tests\unittest-cpp\UnitTest++\src;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zm256</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4290</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDLL;FB_WIN=1;XP_WIN=1;UNICODE;_UNICODE;_WINDOWS;BOOST_ALL_NO_LIB=1;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\tests\ScriptingCoreTest;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\config;E:\prjs\FireBreath-master\tests\unittest-cpp\UnitTest++\src;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\prjs\FireBreath-master\tests\ScriptingCoreTest;E:\prjs\FireBreath-master\src\ScriptingCore;E:\prjs\FireBreath-master\src\PluginAuto;E:\prjs\FireBreath-master\src\config;E:\prjs\FireBreath-master\tests\unittest-cpp\UnitTest++\src;E:\prjs\FireBreath-master\src\3rdParty\boost;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+..\bin\$(Configuration)\UnitTest_ScriptingCore
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\ScriptingCore\RelWithDebInfo\ScriptingCore.lib;..\PluginCore\RelWithDebInfo\PluginCore.lib;..\unittest-cpp\UnitTest++\RelWithDebInfo\UnitTest++.lib;..\boost\libs\system\RelWithDebInfo\boost_system.lib;..\boost\libs\date_time\RelWithDebInfo\boost_date_time.lib;..\boost\libs\regex\RelWithDebInfo\boost_regex.lib;Wininet.lib;..\boost\libs\thread\RelWithDebInfo\boost_thread.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);C:/Program Files (x86)/Microsoft Visual Studio 12.0/VC/atlmfc/lib/amd64</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/prjs/FireBreath-master/buildex/ScriptingCoreTest/RelWithDebInfo/UnitTest_ScriptingCore.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>E:/prjs/FireBreath-master/buildex/bin/RelWithDebInfo/UnitTest_ScriptingCore.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/prjs/FireBreath-master/tests/ScriptingCoreTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/prjs/FireBreath-master -BE:/prjs/FireBreath-master/buildex --check-stamp-file E:/prjs/FireBreath-master/buildex/ScriptingCoreTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/prjs/FireBreath-master/tests/ScriptingCoreTest/CMakeLists.txt;E:\prjs\FireBreath-master\tests\ScriptingCoreTest\CMakeLists.txt;E:\prjs\FireBreath-master\tests\ScriptingCoreTest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\prjs\FireBreath-master\buildex\ScriptingCoreTest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/prjs/FireBreath-master/tests/ScriptingCoreTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/prjs/FireBreath-master -BE:/prjs/FireBreath-master/buildex --check-stamp-file E:/prjs/FireBreath-master/buildex/ScriptingCoreTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/prjs/FireBreath-master/tests/ScriptingCoreTest/CMakeLists.txt;E:\prjs\FireBreath-master\tests\ScriptingCoreTest\CMakeLists.txt;E:\prjs\FireBreath-master\tests\ScriptingCoreTest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\prjs\FireBreath-master\buildex\ScriptingCoreTest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/prjs/FireBreath-master/tests/ScriptingCoreTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/prjs/FireBreath-master -BE:/prjs/FireBreath-master/buildex --check-stamp-file E:/prjs/FireBreath-master/buildex/ScriptingCoreTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/prjs/FireBreath-master/tests/ScriptingCoreTest/CMakeLists.txt;E:\prjs\FireBreath-master\tests\ScriptingCoreTest\CMakeLists.txt;E:\prjs\FireBreath-master\tests\ScriptingCoreTest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\prjs\FireBreath-master\buildex\ScriptingCoreTest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/prjs/FireBreath-master/tests/ScriptingCoreTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HE:/prjs/FireBreath-master -BE:/prjs/FireBreath-master/buildex --check-stamp-file E:/prjs/FireBreath-master/buildex/ScriptingCoreTest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/prjs/FireBreath-master/tests/ScriptingCoreTest/CMakeLists.txt;E:\prjs\FireBreath-master\tests\ScriptingCoreTest\CMakeLists.txt;E:\prjs\FireBreath-master\tests\ScriptingCoreTest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\prjs\FireBreath-master\buildex\ScriptingCoreTest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\TestJSAPIAuto.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\TypeIDMap_test.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\fake_jsarray.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\fake_jsmap.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\jsapi_test.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\jsapiauto_test.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\jsarray_test.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\jscallback_test.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\meta_test.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\variant_list_test.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\variant_map_test.h" />
+    <ClInclude Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\variant_test.h" />
+    <ClCompile Include="E:\prjs\FireBreath-master\tests\ScriptingCoreTest\ScriptingCoreTest.cpp" />
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginAuto\null\NullLogger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\prjs\FireBreath-master\buildex\ZERO_CHECK.vcxproj">
+      <Project>{5806EA1E-4E4B-3AD6-8E40-D9D6EB5EBC0E}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\prjs\FireBreath-master\buildex\PluginCore\PluginCore.vcxproj">
+      <Project>{862CAF85-6756-30A5-9B81-74726AD24861}</Project>
+      <Name>PluginCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\prjs\FireBreath-master\buildex\ScriptingCore\ScriptingCore.vcxproj">
+      <Project>{324C0D68-B65F-3F33-BB06-99F0880EF0F0}</Project>
+      <Name>ScriptingCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\prjs\FireBreath-master\buildex\unittest-cpp\UnitTest++\UnitTest++.vcxproj">
+      <Project>{DE467C0A-A440-3270-B1B1-16A597BDCD7F}</Project>
+      <Name>UnitTest++</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\prjs\FireBreath-master\buildex\boost\libs\date_time\boost_date_time.vcxproj">
+      <Project>{25197F80-693A-3B26-AF7D-A869C83EDB4F}</Project>
+      <Name>boost_date_time</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\prjs\FireBreath-master\buildex\boost\libs\regex\boost_regex.vcxproj">
+      <Project>{E303E255-1E8C-3C8F-AE31-857984EB7393}</Project>
+      <Name>boost_regex</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\prjs\FireBreath-master\buildex\boost\libs\system\boost_system.vcxproj">
+      <Project>{B0B1E2DB-72BA-3A8F-AA2F-9ACE6F555059}</Project>
+      <Name>boost_system</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\prjs\FireBreath-master\buildex\boost\libs\thread\boost_thread.vcxproj">
+      <Project>{B491BCBE-945C-38DE-845F-99A9D6EE383C}</Project>
+      <Name>boost_thread</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

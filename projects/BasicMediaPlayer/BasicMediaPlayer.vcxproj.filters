@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\prjs\FireBreath-master\examples\BasicMediaPlayer\BasicMediaPlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\examples\BasicMediaPlayer\BasicMediaPlayerPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\examples\BasicMediaPlayer\Factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\examples\BasicMediaPlayer\Win\MediaPlayerWin.cpp">
+      <Filter>Win</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\examples\BasicMediaPlayer\Win\error_mapping.cpp">
+      <Filter>Win</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\prjs\FireBreath-master\examples\BasicMediaPlayer\BasicMediaPlayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\examples\BasicMediaPlayer\BasicMediaPlayerPlugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\examples\BasicMediaPlayer\MediaPlayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\examples\BasicMediaPlayer\Win\error_mapping.h">
+      <Filter>Win</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\prjs\FireBreath-master\examples\BasicMediaPlayer\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\prjs\FireBreath-master\examples\BasicMediaPlayer\PluginConfig.cmake" />
+    <None Include="E:\prjs\FireBreath-master\buildex\projects\BasicMediaPlayer\gen\FBControl.rgs" />
+    <None Include="E:\prjs\FireBreath-master\buildex\projects\BasicMediaPlayer\gen\FireBreathWin.rgs" />
+    <None Include="E:\prjs\FireBreath-master\buildex\projects\BasicMediaPlayer\gen\FireBreathWin.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\buildex\projects\BasicMediaPlayer\gen\FBControl.htm" />
+    <None Include="E:\prjs\FireBreath-master\examples\BasicMediaPlayer\Win\projectDef.cmake">
+      <Filter>Win</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\prjs\FireBreath-master\buildex\projects\BasicMediaPlayer\gen\firebreathWin.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{43D85277-F6DE-3049-887B-D034FD415188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4447B5BE-05E7-3745-9B75-A53998BB8E15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win">
+      <UniqueIdentifier>{0334DA25-C687-3832-A9C5-BFC920F0242F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

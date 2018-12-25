@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\prjs\FireBreath-master\cmake\dummy.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\prjs\FireBreath-master\cmake\CMakeLists.txt">
+      <Filter>Common</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\prjs\FireBreath-master\cmake\common.cmake">
+      <Filter>Common</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\cmake\CommonPluginConfig.cmake">
+      <Filter>Common</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\cmake\configure_template.cmake">
+      <Filter>Common</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\cmake\paths.cmake">
+      <Filter>Common</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\cmake\buildconfig.cmake">
+      <Filter>Common</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\cmake\CMakeLists.txt">
+      <Filter>Common</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\cmake\options.cmake">
+      <Filter>Common</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\cmake\PluginConfigDefaults.cmake">
+      <Filter>Common</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\cmake\pluginProjects.cmake">
+      <Filter>Common</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\cmake\README.txt">
+      <Filter>Common</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\cmake\Mac.cmake">
+      <Filter>Windows</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\cmake\patch_xcode.py">
+      <Filter>Windows</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\cmake\Win.cmake">
+      <Filter>Mac</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\cmake\wix.cmake">
+      <Filter>Mac</Filter>
+    </None>
+    <None Include="E:\prjs\FireBreath-master\cmake\X11.cmake">
+      <Filter>X11</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{56CA5502-7C90-3084-AD80-6D7828B83638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mac">
+      <UniqueIdentifier>{7F56BFBD-E3AB-3C59-B544-B125DC18B4BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{AFDE4A0D-ADDE-3207-B703-57F624C9BFF0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X11">
+      <UniqueIdentifier>{94EC936A-FDC8-3CFC-BE2F-EDCCDB2A8B65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

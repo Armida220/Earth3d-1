@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginAuto\PluginInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginAuto\precompiled_headers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginAuto\log4cplus\log4cplus.cpp">
+      <Filter>log4cplus</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginAuto\Win\FireBreathWin.cpp">
+      <Filter>WindowsATL</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginAuto\Win\NpapiPluginWin.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginAuto\Win\PluginWindowWin.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginAuto\Win\PluginWindowlessWin.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginAuto\Win\axPluginObjects.cpp">
+      <Filter>WindowsATL</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginAuto\Win\axmain.cpp">
+      <Filter>WindowsATL</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginAuto\Win\dllmain.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\src\PluginAuto\Win\np_winmain.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\prjs\FireBreath-master\buildex\projects\BasicMediaPlayer\gen\FireBreathWin_i.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\precompiled_headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Win\NpapiPluginWin.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Win\PluginWindowWin.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Win\PluginWindowlessWin.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Win\axmain.h">
+      <Filter>WindowsATL</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\buildex\projects\BasicMediaPlayer\gen\FireBreathWin.tlb" />
+    <ClInclude Include="E:\prjs\FireBreath-master\buildex\projects\BasicMediaPlayer\gen\FireBreathWin_i.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\NpapiPluginMac.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginEventMac.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginWindowMac.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\FactoryDummiesMac.cpp">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginEventMac.cpp">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\NpapiPluginMac.mm">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginWindowMac.mm">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\np_macmain.cpp">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginWindowMacICA.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginWindowMacICA.mm">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginWindowMacCA.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginWindowMacCA.mm">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginWindowMacCG.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginWindowMacCG.cpp">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginWindowMacQD.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginWindowMacQD.cpp">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\KeyCodesCarbon.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginEventMacCarbon.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginEventMacCarbon.mm">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\KeyCodesCarbon.cpp">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginEventMacCarbon.cpp">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\KeyCodesCocoa.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginEventMacCocoa.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\PluginEventMacCocoa.mm">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\Mac\KeyCodesCocoa.cpp">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\X11\KeyCodesX11.h">
+      <Filter>X11</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\X11\NpapiPluginX11.h">
+      <Filter>X11</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\X11\PluginWindowX11.h">
+      <Filter>X11</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\X11\WindowContextX11.h">
+      <Filter>X11</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\X11\KeyCodesX11.cpp">
+      <Filter>X11</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\X11\NpapiPluginX11.cpp">
+      <Filter>X11</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\X11\PluginWindowX11.cpp">
+      <Filter>X11</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\prjs\FireBreath-master\src\PluginAuto\X11\np_x11main.cpp">
+      <Filter>X11</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\prjs\FireBreath-master\buildex\CMakeFiles\2c4e5d40cd4a558936e0fe339dffeac3\FireBreathWin.tlb.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\prjs\FireBreath-master\src\PluginAuto\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\prjs\FireBreath-master\src\PluginAuto\CMakeLists.txt" />
+    <None Include="E:\prjs\FireBreath-master\src\PluginAuto\DONTTOUCHTHISPROJECT.txt" />
+    <None Include="E:\prjs\FireBreath-master\src\PluginAuto\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{83B2ECDB-287E-3517-BFFF-7E28EC5341A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{43D85277-F6DE-3049-887B-D034FD415188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mac">
+      <UniqueIdentifier>{7F56BFBD-E3AB-3C59-B544-B125DC18B4BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4447B5BE-05E7-3745-9B75-A53998BB8E15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{AFDE4A0D-ADDE-3207-B703-57F624C9BFF0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WindowsATL">
+      <UniqueIdentifier>{05141303-0C4B-3DB5-9B44-25A21F26D277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X11">
+      <UniqueIdentifier>{94EC936A-FDC8-3CFC-BE2F-EDCCDB2A8B65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log4cplus">
+      <UniqueIdentifier>{2B065840-6556-38DE-A805-83074A52A50A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
