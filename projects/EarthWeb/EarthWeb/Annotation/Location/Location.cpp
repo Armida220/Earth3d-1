@@ -88,6 +88,7 @@ void Location::setColor(const std::wstring& col)
 void Location::removeColor()
 {
 	getOrCreateInnerObject()->removeColor();
+
 }
 
 void Location::setColorEx(const std::wstring& name, const std::wstring& col)
