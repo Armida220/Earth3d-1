@@ -645,6 +645,7 @@ void AnnotationMap::installPickHover(osgEarth::Util::AnnotationEventHandler * ev
 	m_refAnnotations->addEventCallback(m_refCB);
 	m_refVIPAnnotations->addEventCallback(m_refCB);
 	m_refImgs->addEventCallback(m_refCB);
+	m_refFeatures->addEventCallback(m_refCB);
 
 	for (int i = 0; i < m_refModels->getNumChildren(); i++) {
 		osgEarth::Annotation::ModelNode* mdl = dynamic_cast<osgEarth::Annotation::ModelNode *>(m_refModels->getChild(i));
