@@ -2,7 +2,7 @@
 #include <osgDB/FileUtils>
 using namespace osgEarthXCore;
 
-
+#include <boost/algorithm/string.hpp>
 #include <StaticOSGViewerAssistant/StaticOSGViewerAssistant.h>
 #include <osgEarthAnnotation/ScaleDecoration>
 //#include <osgEarthAnnotation/PlaceNode>
@@ -222,7 +222,7 @@ protected:
 private:
 };
 
-AnnotationMap::AnnotationMap()
+AnnotationMap::AnnotationMap() :m_bContentChanged(false)
 {
 	m_refAnnotations = new osg::Group();
 	m_refAnnotations->setDataVariance(osg::Object::DYNAMIC);
@@ -416,10 +416,15 @@ void AnnotationMap::clearScene()
 
 void AnnotationMap::showSingleTip(double lon, double lat, double alt, const std::string strContent)
 {
+	if (strContent.empty()) return;
+
 	m_dTipLon = lon;
 	m_dTipLat = lat;
 	m_dTipAlt = alt;
-	m_strSingleTipContent = strContent;
+	if (m_strSingleTipContent != strContent){
+		m_strSingleTipContent = strContent;
+		m_bContentChanged = true;
+	}
 	if (!m_refCanvas.valid()){
 		m_refCanvas = osgEarth::Util::Controls::ControlCanvas::getOrCreate(m_pMapViewer->getOrCreateViewer());
 		//osgX::StaticOSGViewerAssistant::dealWithUpdateOperation(new AddGroupObjectOperation(m_refRoot.get(), m_refCanvas.get()));
@@ -438,10 +443,12 @@ void AnnotationMap::showSingleTip(double lon, double lat, double alt, const std:
 		vbox->setBorderColor(1, 1, 1, 1);
 		vbox->setBackColor(.6, .5, .4, 0.8);
 
-		m_singleTipcontent = new osgEarth::Util::Controls::LabelControl(strContent, osg::Vec4(1, 1, 1, 1), 22);
-		m_singleTipcontent->setEncoding(osgText::String::ENCODING_UTF8);
-		m_singleTipcontent->setFont(fntKai);
-		vbox->addControl(m_singleTipcontent.get());
+		//m_singleTipcontent = new osgEarth::Util::Controls::LabelControl(strContent, osg::Vec4(1, 1, 1, 1), 22);
+		//m_singleTipcontent->setEncoding(osgText::String::ENCODING_UTF8);
+		//m_singleTipcontent->setFont(fntKai);
+		//vbox->addControl(m_singleTipcontent.get());
+		createContent();
+		vbox->addControl(m_refContent.get());
 		pBox->addControl(vbox);
 		osg::ref_ptr<osg::Image> image = osgDB::readImageFile(osgDB::findLibraryFile("resource/arrowd.png"));
 		if (image.valid())
@@ -481,16 +488,69 @@ void AnnotationMap::updateSingleTip()
 	float y = cam->getViewport()->height() - vWin.y();
 	osgEarth::Util::Controls::ControlContext cx;
 	osg::Vec2f vh;
+	if (m_bContentChanged)
+	{
+		createContent();
+		m_bContentChanged = false;
+	}	
+	
 	if (m_singleTip.valid()){
 		m_singleTip->calcSize(cx, vh);
 		m_singleTip->setPosition(vWin.x() - 12, y - vh.y());
 	}
-	if (m_singleTipcontent.valid())
+
+}
+
+void AnnotationMap::createContent()
+{
+	m_fields.clear();
+	//std::vector <std::string> fields;
+	boost::split(m_fields, m_strSingleTipContent, boost::is_any_of("&"));
+
+	osgText::Font *fntKai = osgText::readFontFile("simkai.ttf");
+	if (m_refContent.get() == NULL){
+		m_refContent = new osgEarth::Util::Controls::Grid();
+		m_refContent->setHorizAlign(osgEarth::Util::Controls::Control::ALIGN_CENTER);
+		m_refContent->setBorderColor(1, 1, 0, 1);
+	}
+	else {
+		m_refContent->clearControls();
+	}
+
+	for (int i = 0; i < m_fields.size(); i += 2)
 	{
-		if (m_singleTipcontent->text() != m_strSingleTipContent)
-		{
-			m_singleTipcontent->setText(m_strSingleTipContent);
+		osgEarth::Util::Controls::ControlVector vecCtrls;
+
+		std::string ext = m_fields[i].size()>4 ? m_fields[i].substr(m_fields[i].size() - 4, 4) : "";
+		if (ext == ".png" || ext == ".jpg" || ext == ".gif" || ext == "jpeg") {
+			osg::ref_ptr<osg::Image> imgQzx = osgDB::readImageFile(m_fields[i]);
+			osgEarth::Util::Controls::RoundedFrame* ctrl = new osgEarth::Util::Controls::RoundedFrame();
+			ctrl->setImage(imgQzx.get());
+			vecCtrls.push_back(ctrl);
 		}
+		else {
+			//osgEarth::Util::Controls::LabelControl* content = new osgEarth::Util::Controls::LabelControl(osgX::ConvertChar::convertLocalStrToUTF8Str(m_fields[i]), osg::Vec4(1, 1, 1, 1), 22);
+			osgEarth::Util::Controls::LabelControl* content = new osgEarth::Util::Controls::LabelControl(m_fields[i], osg::Vec4(1, 1, 1, 1), 22);
+			content->setEncoding(osgText::String::ENCODING_UTF8);
+			content->setFont(fntKai);
+			vecCtrls.push_back(content);
+		}
+
+		ext = m_fields[i + 1].size()>4 ? m_fields[i + 1].substr(m_fields[i + 1].size() - 4, 4) : "";
+		if (ext == ".png" || ext == ".jpg" || ext == ".gif" || ext == "jpeg") {
+			osg::ref_ptr<osg::Image> imgQzx = osgDB::readImageFile(m_fields[i + 1]);
+			osgEarth::Util::Controls::RoundedFrame* ctrl = new osgEarth::Util::Controls::RoundedFrame();
+			ctrl->setImage(imgQzx.get());
+			vecCtrls.push_back(ctrl);
+		}
+		else {
+			//osgEarth::Util::Controls::LabelControl* content = new osgEarth::Util::Controls::LabelControl(osgX::ConvertChar::convertLocalStrToUTF8Str(m_fields[i+1]), osg::Vec4(1, 1, 1, 1), 22);
+			osgEarth::Util::Controls::LabelControl* content = new osgEarth::Util::Controls::LabelControl(m_fields[i + 1], osg::Vec4(1, 1, 1, 1), 22);
+			content->setEncoding(osgText::String::ENCODING_UTF8);
+			content->setFont(fntKai);
+			vecCtrls.push_back(content);
+		}
+		m_refContent->addControls(vecCtrls);
 	}
 }
 

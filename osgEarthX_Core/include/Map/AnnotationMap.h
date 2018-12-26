@@ -56,14 +56,20 @@ namespace osgEarthXCore
 		void showSingleTip(double lon,double lat,double alt,const std::string strContent);
 		void clearSingleTip();
 		void updateSingleTip();
+		void createContent();
 	protected:
 		virtual ~AnnotationMap(){}
+
 		double m_dTipLon;
 		double m_dTipLat;
 		double m_dTipAlt;
 		std::string m_strSingleTipContent;
 		osg::ref_ptr< osgEarth::Util::Controls::Control > m_singleTip;
 		osg::ref_ptr<osgEarth::Util::Controls::LabelControl> m_singleTipcontent;
+		osg::ref_ptr< osgEarth::Util::Controls::Grid > m_refContent;
+		std::vector <std::string> m_fields;
+		bool m_bContentChanged;
+
 	private:
 	};
 }
