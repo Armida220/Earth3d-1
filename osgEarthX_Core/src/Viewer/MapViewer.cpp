@@ -340,19 +340,22 @@ MouseCoordsToolX::handle(const osgGA::GUIEventAdapter& ea, osgGA::GUIActionAdapt
 									stateset->removeAttribute(m_material_selected);
 								}
 							}
+
 							m_selGroup = group;
-							osg::ref_ptr<osg::StateSet> stateset = group->getOrCreateStateSet();
-							osg::Material* material_previous = (osg::Material*)stateset->getAttribute(osg::StateAttribute::MATERIAL);
-							if (material_previous)
-							{
-								m_material_previous = material_previous;
+
+							if (m_bSelectedCol){
+								osg::ref_ptr<osg::StateSet> stateset = group->getOrCreateStateSet();
+								osg::Material* material_previous = (osg::Material*)stateset->getAttribute(osg::StateAttribute::MATERIAL);
+								if (material_previous)
+								{
+									m_material_previous = material_previous;
+								}
+								stateset->setAttribute(m_material_selected, osg::StateAttribute::ON | osg::StateAttribute::OVERRIDE);
+
+								stateset->setMode(GL_BLEND, osg::StateAttribute::ON);
+								stateset->setRenderingHint(osg::StateSet::TRANSPARENT_BIN);
+								stateset->setRenderBinDetails(11, "DepthSortedBin");
 							}
-							stateset->setAttribute(m_material_selected, osg::StateAttribute::ON | osg::StateAttribute::OVERRIDE);
-
-							stateset->setMode(GL_BLEND, osg::StateAttribute::ON);
-							stateset->setRenderingHint(osg::StateSet::TRANSPARENT_BIN);
-							stateset->setRenderBinDetails(11, "DepthSortedBin");
-
 							break;
 						}
 					}
