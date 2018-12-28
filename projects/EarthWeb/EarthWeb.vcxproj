@@ -560,6 +560,8 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EarthWeb.cpp" />
+    <ClCompile Include="EarthWebAPI.cpp" />
     <ClCompile Include="EarthWeb\Annotation\Circle\Circle.cpp" />
     <ClCompile Include="EarthWeb\Annotation\FeaturePrimitive\FeaturePrimitive.cpp" />
     <ClCompile Include="EarthWeb\Annotation\ImageOverlay\ImageOverlay.cpp" />
@@ -613,6 +615,7 @@
     <ClCompile Include="EarthWeb\Utils\StaticUtils\EarthStaticUtils.cpp" />
     <ClCompile Include="EarthWeb\Utils\StaticUtils\SourceStaticUtils.cpp" />
     <ClCompile Include="EarthWeb\Utils\StaticUtils\StringStaticUtils.cpp" />
+    <ClCompile Include="Factory.cpp" />
     <ClInclude Include="EarthWeb.h" />
     <ClInclude Include="EarthWebAPI.h" />
     <ClInclude Include="EarthWeb\Annotation\Circle\Circle.h" />
@@ -691,9 +694,6 @@
     <ClInclude Include="gen\global\COM_config.h" />
     <ClInclude Include="gen\global\config.h" />
     <ClInclude Include="gen\global\resource.h" />
-    <ClCompile Include="EarthWeb.cpp" />
-    <ClCompile Include="EarthWebAPI.cpp" />
-    <ClCompile Include="Factory.cpp" />
     <ResourceCompile Include="gen\firebreathWin.rc" />
     <None Include="..\..\..\src\projects\EarthWeb\PluginConfig.cmake" />
     <None Include="gen\ExportList_plugin.txt" />
