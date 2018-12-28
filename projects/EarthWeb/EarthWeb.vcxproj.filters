@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\..\src\projects\EarthWeb\EarthWeb.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\projects\EarthWeb\EarthWebAPI.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\projects\EarthWeb\Factory.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="EarthWeb\EarthGroup\EarthGroup.cpp">
       <Filter>EarthWeb\EarthGroup</Filter>
     </ClCompile>
@@ -169,14 +160,17 @@
     <ClCompile Include="EarthWeb\Utils\StaticUtils\StringStaticUtils.cpp">
       <Filter>EarthWeb\Utils\StaticUtils</Filter>
     </ClCompile>
+    <ClCompile Include="EarthWeb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EarthWebAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\src\projects\EarthWeb\EarthWeb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\projects\EarthWeb\EarthWebAPI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="gen\rcgen.sh.in">
       <Filter>Generated</Filter>
     </ClInclude>
@@ -404,6 +398,12 @@
     </ClInclude>
     <ClInclude Include="EarthWeb\Utils\StaticUtils\StringStaticUtils.h">
       <Filter>EarthWeb\Utils\StaticUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="EarthWebAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EarthWeb.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

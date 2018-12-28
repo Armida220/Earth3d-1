@@ -511,7 +511,7 @@ void AnnotationMap::createContent()
 	if (m_refContent.get() == NULL){
 		m_refContent = new osgEarth::Util::Controls::Grid();
 		m_refContent->setHorizAlign(osgEarth::Util::Controls::Control::ALIGN_CENTER);
-		m_refContent->setBorderColor(1, 1, 0, 1);
+		//m_refContent->setBorderColor(1, 1, 0, 1);
 	}
 	else {
 		m_refContent->clearControls();
